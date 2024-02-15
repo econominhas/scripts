@@ -43,6 +43,8 @@ lerna-debug.log*
 # Temp
 /tmp
 /local-aws
+/scripts/files/*
+!/scripts/files/.gitkeep
 
 # Generated
 /prisma/*.dbml

@@ -32,6 +32,10 @@
 	"scripts": {
 		"prepare": "husky install",
 		"lint:ts": "tsc --project tsconfig.lint.json",
-		"lint:code": "eslint \"src/**/*.ts\" --fix --quiet"
+		"lint:code": "eslint \"src/**/*.ts\" --fix --quiet",
+		"r": "ts-node"
+	},
+	"dependencies": {
+		"csv": "^6.3.6"
 	}
 }
