@@ -1,0 +1,3 @@
+{
+	"src/**/*": ["bash -c \"yarn lint:ts\"", "bash -c \"yarn lint:code\""]
+}

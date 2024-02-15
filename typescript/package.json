@@ -1,0 +1,37 @@
+{
+	"name": "scripts",
+	"version": "1.0.0",
+	"license": "Apache-2.0",
+	"author": "Econominhas",
+	"description": "Scripts for general purpose",
+	"homepage": "https://github.com/econominhas/scripts#readme",
+	"bugs": {
+		"url": "https://github.com/econominhas/scripts/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/econominhas/scripts.git"
+	},
+	"engines": {
+		"node": ">=20"
+	},
+	"devDependencies": {
+		"@types/node": "^20.9.4",
+		"@typescript-eslint/eslint-plugin": "^6.12.0",
+		"@typescript-eslint/parser": "^6.12.0",
+		"eslint": "^8.54.0",
+		"eslint-config-prettier": "^9.0.0",
+		"eslint-plugin-prettier": "^5.0.1",
+		"husky": "^8.0.3",
+		"lint-staged": "^15.1.0",
+		"prettier": "^3.1.0",
+		"ts-node": "^10.9.1",
+		"tsconfig-paths": "^4.2.0",
+		"typescript": "^5.3.2"
+	},
+	"scripts": {
+		"prepare": "husky install",
+		"lint:ts": "tsc --project tsconfig.lint.json",
+		"lint:code": "eslint \"src/**/*.ts\" --fix --quiet"
+	}
+}
